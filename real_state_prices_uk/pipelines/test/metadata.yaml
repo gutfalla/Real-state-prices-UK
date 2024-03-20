@@ -14,13 +14,13 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: sql
-  name: test
+  name: test_sql
   retry_config: null
   status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: test
+  uuid: test_sql
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
