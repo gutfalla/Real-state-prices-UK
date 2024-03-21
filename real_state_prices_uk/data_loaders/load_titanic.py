@@ -14,7 +14,7 @@ def load_data_from_api(**kwargs) -> DataFrame:
     """
     Template for loading data from API
     """
-    url = 'https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv?raw=True'
+    url = 'http://prod.publicdata.landregistry.gov.uk.s3-website-eu-west-1.amazonaws.com/pp-2023.csv'
 
     return pd.read_csv(url)
 

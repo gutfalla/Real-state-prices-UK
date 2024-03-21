@@ -59,7 +59,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: example_pipeline
+name: test_rspuk
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -69,6 +69,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: example_pipeline
+uuid: test_rspuk
 variables_dir: /home/src/mage_data/real_state_prices_uk
 widgets: []
