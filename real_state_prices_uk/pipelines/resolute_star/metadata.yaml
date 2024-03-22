@@ -1,44 +1,20 @@
 blocks:
 - all_upstream_blocks_executed: true
   color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: dev
-    dbt: {}
-    disable_query_preprocessing: false
-    export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: sql
-  name: test_postgres
-  retry_config: null
-  status: executed
-  timeout: null
-  type: data_loader
-  upstream_blocks: []
-  uuid: test_postgres
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    data_provider: postgres
-    data_provider_profile: dev
-    export_write_policy: append
-  downstream_blocks: []
+  configuration: {}
+  downstream_blocks:
+  - transform_ppd2023
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: r
-  name: test r
+  name: Price_Paid_Data_2023
   retry_config: null
   status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: test_r
+  uuid: price_paid_data_2023
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
@@ -47,25 +23,26 @@ blocks:
   executor_type: local_python
   has_callback: false
   language: r
-  name: test_transformer
+  name: transform_PPD2023
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
-  upstream_blocks: []
-  uuid: test_transformer
+  upstream_blocks:
+  - price_paid_data_2023
+  uuid: transform_ppd2023
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2024-03-21 01:43:53.722061+00:00'
+created_at: '2024-03-21 23:33:55.079278+00:00'
 data_integration: null
 description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: test
+name: resolute star
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -75,6 +52,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: test
+uuid: resolute_star
 variables_dir: /home/src/mage_data/real_state_prices_uk
 widgets: []
