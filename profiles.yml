@@ -1,0 +1,23 @@
+pg-dbt-workshop: 
+  target; dev 
+  outputs:
+    dev:
+      type: postgres 
+      host: localhost 
+      user: root 
+      password: root
+      port: 5432
+      dbname: de_project 
+      schema: real_state_prices_uk
+      threads: 4
+      keepalives idle: 0 # default 0, indicating the system default
+bg-de-zoomcamp:
+  target: dev 
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account 
+      project: lexical-theory-410512 
+      dataset: real_state_prices_uk
+      threads: 4
+      keyfile: lexical-theory-410512-cb03a80ef9a1.json

@@ -1,0 +1,18 @@
+version: 0
+
+sources:
+  - name: staging
+    database:
+      lexical-theory-410512
+      # For postgres:
+      #database: production
+    schema:
+      real_state_prices_uk
+
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: 2023
+      - name:
+          2023_daily
+          # freshness:
+          # error_after: {count: 6, period: hour}
