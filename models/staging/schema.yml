@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging
+    database: lexical-theory-410512
+    schema: real_state_prices_uk
+    tables:
+      - name: "2023"
+      - name: "2023_daily"
