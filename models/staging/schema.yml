@@ -7,8 +7,7 @@ sources:
     
     tables:
       - name: "2023"
-      - name: "2023_daily"
-
+    
 models:
   - name: stg_2023
     description: ""
@@ -65,7 +64,7 @@ models:
         test:
           - accepted_values:
               values: 
-                [L,F]
+                ['L','F']
               severity: warn
               quote: false
 
