@@ -54,8 +54,7 @@ In particular a heat map was built with the data of prices.
 
 the Dashboard can be accessed at: 
 
-
-![Alt Text](https://lookerstudio.google.com/s/o-BbswCyWpU)
+https://lookerstudio.google.com/s/o-BbswCyWpU
 
 
 
