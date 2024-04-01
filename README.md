@@ -30,6 +30,13 @@ Finaly, I created a trigger for running all the pipeline the 20th of each month 
 
 
 
+![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Mage_VS.gif)
+
+
+
+
+
+
 
 
 
