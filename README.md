@@ -2,5 +2,4 @@ This repository contains the final project for the Data Engineering Zoomcamp of 
 
 I work using data provided by HM Land Registry. I use the statistical dataset "Price Paid Data" that contains information on the amounts paid for properties in England and Wales.
 
-
-<iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/4654857a-295e-4b0a-9720-47906b0afecd/page/XK5uD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+https://lookerstudio.google.com/embed/reporting/4654857a-295e-4b0a-9720-47906b0afecd/page/XK5uD
