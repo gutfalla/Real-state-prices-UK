@@ -10,12 +10,12 @@ blocks:
   language: r
   name: Price_Paid_Data_2023
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: data_loader
   upstream_blocks: []
   uuid: price_paid_data_2023
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks:
@@ -34,7 +34,7 @@ blocks:
   upstream_blocks:
   - price_paid_data_2023
   uuid: transform_ppd2023
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks: []
@@ -50,7 +50,7 @@ blocks:
   upstream_blocks:
   - transform_ppd2023
   uuid: export_ppd2023
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks: []
@@ -66,7 +66,7 @@ blocks:
   upstream_blocks:
   - transform_ppd2023
   uuid: export_ppd2023_partitioned
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     data_provider: bigquery

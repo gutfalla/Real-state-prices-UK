@@ -1,9 +1,9 @@
 # Set CRAN mirror manually
-options(repos = c(CRAN = "https://cloud.r-project.org"))
+#options(repos = c(CRAN = "https://cloud.r-project.org"))
 
 # Now install the packages
-install.packages("readr")
-install.packages("lubridate")
+#install.packages("readr")
+#install.packages("lubridate")
 
 # Load required libraries
 library(readr)
