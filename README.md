@@ -50,11 +50,15 @@ All the documentation can be access at https://cloud.getdbt.com/accounts/254419/
 
 I employed Goole Lockerstudio for the generation of dashboards for the analysis.
 
-In particular a heat map was built with the data of prices. 
+I included in the page 1 a heat map was built with the data of prices. the map does supports zoom and have a controller for filtering by price. It contains other filters, such as county, city, etc.
 
-the Dashboard can be accessed at: 
+I included In the page 2 pie charts for the condition of the propierty and the kind of propierty, also a time series with the number of sells per day.
 
-https://lookerstudio.google.com/s/o-BbswCyWpU
+the Dashboards can be accessed at: 
+
+https://lookerstudio.google.com/s/stwi-ktCzrI
+
+https://lookerstudio.google.com/s/rOFk3DE6C18
 
 
 
