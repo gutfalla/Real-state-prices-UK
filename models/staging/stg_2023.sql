@@ -11,14 +11,14 @@ renamed as (
     select
         ID,
         Price,
-        Selling_date,
+        Selling_date as Selling date,
         Postcode,
         Kind,
-        {{ desc_kind(Kind) }} as Estate_kind,
+        {{ desc_kind(Kind) }} as Estate kind,
         Condition,
-        {{ desc_condition(condition) }} as Estate_condition,
-        Estate_type,
-        {{ desc_duration(Estate_type) }} as Estate_duration,
+        {{ desc_condition(condition) }} as Estate condition,
+        Estate_type as Estate type,
+        {{ desc_duration(Estate_type) }} as Estate duration,
         PAON,
         SAON,
         Street,
@@ -27,9 +27,9 @@ renamed as (
         District,
         County,
         A,
-        {{ desc_a(A) }} as Price_paid,
+        {{ desc_a(A) }} as Price paid,
         A1,
-        {{ desc_a1(A1) }} as Record_status
+        {{ desc_a1(A1) }} as Record status
 
     from source
 
