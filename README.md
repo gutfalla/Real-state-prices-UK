@@ -12,4 +12,4 @@ The dashboard can be accesed following this link:
 
 https://lookerstudio.google.com/embed/reporting/4654857a-295e-4b0a-9720-47906b0afecd/page/XK5uD
 
-![Alt Text] (https://github.com/gutfalla/Real-state-prices-UK/blob/main/Dashboard_1.html)
+![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Dashboard_1.html)
