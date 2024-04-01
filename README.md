@@ -54,7 +54,7 @@ I included in the page 1 a heat map was built with the data of prices. the map d
 
 I included In the page 2 pie charts for the condition of the propierty and the kind of propierty, also a time series with the number of sells per day.
 
-the Dashboards can be accessed at: 
+The dashboards can be accessed at: 
 
 https://lookerstudio.google.com/s/stwi-ktCzrI
 
