@@ -39,8 +39,7 @@ models:
         description: "Do not separately identify bungalows. End-of-terrace properties are included in the Terraced category. ‘Other’ is only valid where the transaction relates to a property type that is not covered by existing values, for example where a property comprises more than one large parcel of land"
         test:
           - accepted_values:
-              values: 
-                ['D','S','T','F','O']
+              values: ['D','S','T','F','O']
               severity: warn
               quote: false
 
@@ -53,8 +52,7 @@ models:
         description: "Indicates the age of the property and applies to all price paid transactions, residential and non-residential."
         test:
           - accepted_values:
-              values: 
-                ['Y','N']
+              values: ['Y','N']
               severity: warn
               quote: false
 
@@ -63,8 +61,7 @@ models:
         description: "Relates to the tenure. HM Land Registry does not record leases of 7 years or less in the Price Paid Dataset."
         test:
           - accepted_values:
-              values: 
-                ['L','F']
+              values: ['L','F']
               severity: warn
               quote: false
 
