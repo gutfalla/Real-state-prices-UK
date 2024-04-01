@@ -8,7 +8,10 @@ This repository uses data provided by HM Land Registry to explore the distributi
 
 This project was made using codespaces
 
-<img src="https://github.com/gutfalla/Real-state-prices-UK/blob/main/Mage_VS.gif" alt="Mage screenshot" width="854" height="480">
+![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Mage_VS.gif)
+
+
+
 
 
 
