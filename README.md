@@ -56,9 +56,7 @@ I included In the page 2 pie charts for the condition of the propierty and the k
 
 The dashboards can be accessed at: 
 
-https://lookerstudio.google.com/s/stwi-ktCzrI
-
-https://lookerstudio.google.com/s/rOFk3DE6C18
+https://lookerstudio.google.com/embed/reporting/4654857a-295e-4b0a-9720-47906b0afecd/page/p_pmn0z7xzfd
 
 
 
