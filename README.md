@@ -62,6 +62,6 @@ https://lookerstudio.google.com/reporting/4654857a-295e-4b0a-9720-47906b0afecd
 
 I am established and looking for opportunities in London. If you want to contact me or have more information about my profile, please reach me through LinkedIn.
 
-www.linkedin.com/in/hd-falla-gutierrez
+https://www.linkedin.com/in/hd-falla-gutierrez
 
 Have a nice week!
