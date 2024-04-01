@@ -26,7 +26,7 @@ Afterwards, I create a data exporter for sending the transformed data set to Big
 
 https://github.com/gutfalla/Real-state-prices-UK/blob/main/real_state_prices_uk/data_exporters/export_ppd2023_bigquery.sql
 
-Finally, I created a trigger for running all the pipelines on the 20th of each month at 23:59. The reason is that HM Land Registry updated the information at this date and time. I try to guarantee the freshness of the data by doing that.
+Finally, I created a trigger for running all the pipelines on the 20th of each month at 23:59. The reason is that HM Land Registry updates the information at this date and time. I tried to guarantee the freshness of the data by doing that.
 
 
 ![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Mage_trigger.png)
@@ -44,11 +44,9 @@ I added a second trigger so the freshness of the information in the dashboard is
 ![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/DBT.png)
 
 
-You can access all the documentation at: https://cloud.getdbt.com/accounts/254419/develop/6176240/docs/index.html#!/macro/macro.real_state_prices_uk.desc_a .
-
 ## 2.3 Dashboard
 
-I employed Goole Lookerstudio for the generation of dashboards for the analysis.
+I employed Google Lookerstudio for the generation of dashboards for the analysis.
 
 I included on page 1 a heat map built with the data of prices. The map does support zooming and has a controller for filtering by price. It contains other filters, such as county, city, etc.
 
