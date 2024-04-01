@@ -6,13 +6,15 @@ This repository uses data provided by HM Land Registry to explore the distributi
 
 This project was developed using codespaces in all its stages.
 
+
 ![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Mage_VS.gif)
+
 
 ## 2. Methodology
 
-## 2.1 Pipeline
+## 2.1 Pipelines
 
-I ran Mage on a docker container. I create a loader for retrieving the data directly from HM Land Registry and submit it to Google Cloud Service (my data lake). The language employed for such task was R.
+I ran Mage on a docker container for the orchestation. I create a loader for retrieving the data directly from HM Land Registry and submit it to Google Cloud Service (my data lake). The language employed for such task was R.
 
 https://github.com/gutfalla/Real-state-prices-UK/blob/main/real_state_prices_uk/data_loaders/price_paid_data_2023.r
 
@@ -26,34 +28,35 @@ https://github.com/gutfalla/Real-state-prices-UK/blob/main/real_state_prices_uk/
 
 Finaly, I created a trigger for running all the pipeline the 20th of each month at 23:59. The reason is that HM Land Registry update the information at this date and time. I try to guaranty the freshness of the data by doing that.
 
+
 ![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Mage_trigger.png)
 
 
+## 2.2 Transformation in warehouse
 
-![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Mage_VS.gif)
+I employed DBT for the developement, test and documentation. I conected DBT to the Big Query database containg all the data generated in the previous pipelines. I developed an schema a some models adding multiple tests to variables as a data engineering good practice. The final schema was: https://github.com/gutfalla/Real-state-prices-UK/blob/main/models/staging/schema.yml .
 
+The query I ran in Big Query was: https://github.com/gutfalla/Real-state-prices-UK/blob/main/models/staging/stg_2023.sql .
 
-
-
-
-
-
+A second trigger was added so the freshness of the information in the dashboard is guarantee. The trigger run all the transformations and SQL queries in the data warehouse the 21st of each month at 01:00
 
 
+![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/DBT.png)
 
 
+All the documentation can be access at https://cloud.getdbt.com/accounts/254419/develop/6176240/docs/index.html#!/macro/macro.real_state_prices_uk.desc_a .
+
+## 2.3 Dashboard
+
+I employed Goole Lockerstudio for the generation of dashboards for the analysis.
+
+In particular a heat map was built with the data of prices. 
+
+the Dashboard can be accessed at: 
 
 
+![Alt Text](https://lookerstudio.google.com/s/o-BbswCyWpU)
 
-
-
-
-
-The dashboard can be accesed following this link:
-
-## Dashboard
-
-<iframe src="https://lookerstudio.google.com/embed/reporting/4654857a-295e-4b0a-9720-47906b0afecd/page/XK5uD" width="800" height="600"></iframe>
 
 
 
