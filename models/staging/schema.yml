@@ -7,4 +7,99 @@ sources:
     
     tables:
       - name: "2023"
-      - name: "2023_daily"
+    
+models:
+  - name: stg_2023
+    description: ""
+    columns: 
+
+      - name: id
+        data_type: string
+        description: "A reference number which is generated automatically recording each published sale. The number is unique and will change each time a sale is recorded."
+        tests:
+          - unique:
+              severity: warn
+          - not_null:
+              severity: warn
+
+      - name: price
+        data_type: int64
+        description: "Sale price stated on the transfer deed."
+
+      - name: selling_date
+        data_type: date
+        description: "Date when the sale was completed, as stated on the transfer deed."
+
+      - name: postcode
+        data_type: string
+        description: "This is the postcode used at the time of the original transaction. Note that postcodes can be reallocated and these changes are not reflected in the Price Paid Dataset."
+
+      - name: kind
+        data_type: string
+        description: "Do not separately identify bungalows. End-of-terrace properties are included in the Terraced category. ‘Other’ is only valid where the transaction relates to a property type that is not covered by existing values, for example where a property comprises more than one large parcel of land"
+        test:
+          - accepted_values:
+              values: 
+                ['D','S','T','F','O']
+              severity: warn
+              quote: false
+
+      - name: property_type
+        data_type: string
+        description: ""
+        
+      - name: condition
+        data_type: string
+        description: "Indicates the age of the property and applies to all price paid transactions, residential and non-residential."
+        test:
+          - accepted_values:
+              values: 
+                ['Y','N']
+              severity: warn
+              quote: false
+
+      - name: estate_type
+        data_type: string
+        description: "Relates to the tenure. HM Land Registry does not record leases of 7 years or less in the Price Paid Dataset."
+        test:
+          - accepted_values:
+              values: 
+                ['L','F']
+              severity: warn
+              quote: false
+
+      - name: paon
+        data_type: string
+        description: "Primary Addressable Object Name. Typically the house number or name."
+
+      - name: saon
+        data_type: string
+        description: "Secondary Addressable Object Name. Where a property has been divided into separate units (for example, flats), the PAON (above) will identify the building and a SAON will be specified that identifies the separate unit/flat."
+
+      - name: street
+        data_type: string
+        description: ""
+
+      - name: locality
+        data_type: string
+        description: ""
+
+      - name: town_city
+        data_type: string
+        description: ""
+
+      - name: district
+        data_type: string
+        description: ""
+
+      - name: county
+        data_type: string
+        description: ""
+
+      - name: a
+        data_type: string
+        description: "Indicates the type of Price Paid transaction."
+
+      - name: a1
+        data_type: string
+        description: "Indicates additions, changes and deletions to the records."
