@@ -1,11 +1,23 @@
 ![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Untitled.png)
 
+## Introduction
+
+This repository uses data provided by HM Land Registry to explore the distribution of real estate prices in two countries of the United Kingdom. I use the statistical dataset "Price Paid Data" that contains information on the amounts paid for properties in England and Wales. The original data could be accessed at: http://prod.publicdata.landregistry.gov.uk.s3-website-eu-west-1.amazonaws.com/pp-2023.csv
+
+## Methodology
+
+This project was made using codespaces
 
 
 
-This repository contains the final project for the Data Engineering Zoomcamp of DataTalksClub 2024.
 
-I work using data provided by HM Land Registry. I use the statistical dataset "Price Paid Data" that contains information on the amounts paid for properties in England and Wales.
+
+
+
+
+
+
+
 
 
 The dashboard can be accesed following this link:
