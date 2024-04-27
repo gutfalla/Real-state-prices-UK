@@ -1,4 +1,4 @@
-![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Untitled.png)
+![Alt Text](res/Untitled.png)
 
 ## 1. Introduction
 
@@ -7,7 +7,7 @@ This repository uses data provided by the HM Land Registry to explore the distri
 I used codespaces in all the stages of this project.
 
 
-![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Mage_VS.gif)
+![Alt Text](res/Mage_VS.gif)
 
 
 ## 2. Methodology
@@ -29,7 +29,7 @@ https://github.com/gutfalla/Real-state-prices-UK/blob/main/real_state_prices_uk/
 Finally, I created a trigger for running all the pipelines on the 20th of each month at 23:59. The reason is that HM Land Registry updates the information at this date and time. I tried to guarantee the freshness of the data by doing that.
 
 
-![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/Mage_trigger.png)
+![Alt Text](res/Mage_trigger.png)
 
 
 ## 2.2 Transformation in warehouse
@@ -41,7 +41,7 @@ The query I ran in Big Query was: https://github.com/gutfalla/Real-state-prices-
 I added a second trigger so the freshness of the information in the dashboard is guaranteed. The trigger runs all the transformations and SQL queries in the data warehouse on the 21st of each month at 01:00
 
 
-![Alt Text](https://github.com/gutfalla/Real-state-prices-UK/blob/main/DBT.png)
+![Alt Text](res/DBT.png)
 
 
 ## 2.3 Dashboard
